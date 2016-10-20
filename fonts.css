@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'jura';
-    src: url('fonts/jura-semibold.woff2') format('woff2'),
-         url('fonts/jura-semibold.woff') format('woff');
+    src: url('fonts/Jura-Semibold.woff2') format('woff2'),
+         url('fonts/Jura-Semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'jura';
-    src: url('fonts/jura-regular.woff2') format('woff2'),
-         url('fonts/jura-regular.woff') format('woff');
+    src: url('fonts/Jura-Regular.woff2') format('woff2'),
+         url('fonts/Jura-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'jura';
-    src: url('fonts/jura-medium.woff2') format('woff2'),
-         url('fonts/jura-medium.woff') format('woff');
+    src: url('fonts/Jura-Medium.woff2') format('woff2'),
+         url('fonts/Jura-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 
@@ -40,8 +40,8 @@
 
 @font-face {
     font-family: 'jura';
-    src: url('fonts/jura-light.woff2') format('woff2'),
-         url('fonts/jura-light.woff') format('woff');
+    src: url('fonts/Jura-Light.woff2') format('woff2'),
+         url('fonts/Jura-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 
@@ -52,8 +52,8 @@
 
 @font-face {
     font-family: 'jura';
-    src: url('fonts/jura-bold.woff2') format('woff2'),
-         url('fonts/jura-bold.woff') format('woff');
+    src: url('fonts/Jura-Bold.woff2') format('woff2'),
+         url('fonts/Jura-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 
