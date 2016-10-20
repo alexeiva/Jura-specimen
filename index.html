@@ -1,0 +1,551 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Jura Font Specimen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Jura Font Specimen</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    * {font-family: 'jura'; font-weight: 400; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'jura'; font-weight: 500; color: #767777;}
+    .s200 {font-size: 200px; }
+    .huge {font-size: 100px; }
+    .px24 {font-size: 24px; line-height: 28px;}
+    .light {font-family: 'jura'; font-weight: 300;}
+    .regular {font-family: 'jura'; font-weight: 400;}
+    .medium {font-family: 'jura'; font-weight: 500;}
+    .semibold {font-family: 'jura'; font-weight: 600;}
+    .bold {font-family: 'jura'; font-weight: 700;}
+    a {font-family: 'jura'; font-weight: 400;}
+    #alphabet {height: 300px;}
+    
+    .demo-card-wide.mdl-card {
+      width: 480px ; /* was 512 */
+    }
+    .demo-card-wide > .mdl-card__title {
+      color: #fff;
+      height: 176px;
+      background: url('images/font-inspector.png') center / cover;
+    }
+    .demo-card-wide > .mdl-card__menu {
+      color: #fff;
+    }
+    /* Overrides*/
+    .mdl-button {text-transform: none; color: #767777;}
+    .android-wear {width: 900px;}
+    em, p, span{font-size: 18px};
+
+    /* OpenType */
+
+    .case {
+      -moz-font-feature-settings:"case" 1, "kern" 1; 
+      -moz-font-feature-settings:"case=1, kern=1"; 
+      -ms-font-feature-settings:"case" 1, "kern" 1; 
+      -o-font-feature-settings:"case" 1, "kern" 1; 
+      font-feature-settings:"case" 1, "kern" 1;
+    }
+    .cpsp {
+      -moz-font-feature-settings:"cpsp" 1, "kern" 1; 
+      -moz-font-feature-settings:"cpsp=1, kern=1"; 
+      -ms-font-feature-settings:"cpsp" 1, "kern" 1; 
+      -o-font-feature-settings:"cpsp" 1, "kern" 1; 
+      font-feature-settings:"cpsp" 1, "kern" 1;
+    }
+
+    .nocalt {
+      -moz-font-feature-settings:"calt" 0, "kern" 1; 
+      -moz-font-feature-settings:"calt=0, kern=1"; 
+      -ms-font-feature-settings:"calt" 0, "kern" 1; 
+      -o-font-feature-settings:"calt" 0, "kern" 1; 
+      font-feature-settings:"calt" 0, "kern" 1;
+    }
+
+    .ordn {
+    -moz-font-feature-settings:"ordn";
+    -moz-font-feature-settings:"ordn=1";
+    -ms-font-feature-settings:"ordn";
+    -o-font-feature-settings:"ordn";
+    font-feature-settings:"ordn";
+    font-variant-numeric: ordinal;
+    }
+    </style>
+
+
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#typetester">Type Tester</a>
+
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#glyph-reperoire">Glyph Repertoire</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#otfeatures">Features</a>
+
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#worklog">Work Log</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://fonts.google.com/specimen/Jura">View on Google Fonts</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#download">Download</a>
+
+            </nav>
+          </div>
+          <span class="android-mobile-title mdl-layout-title">
+            <img class="android-logo-image" src="images/android-logo.png">
+          </span>
+          </div>
+      </div>
+      
+      <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="android-be-together-section mdl-typography--text-center">
+          
+          <p class="clearfix" style="margin: 0px;"></p>
+          <h1 class="regular">Jura Font Specimen</h1>
+
+          <h5>Open-source font by Daniel Johnson and Alexei Vanyashin</h5>
+    
+          <h6 class="huge" style="margin: 50px 0;">North Carolina</h6>
+          <p class="clearfix"></p>
+          <h6 class="regular" style="margin: 20px 0;">Wright brothers were the first to invent aircraft controls that made fixed-wing powered flight possible</h6>
+          <h6 class="huge light" style="margin: 70px 0;">First in flight</h6>
+          <h5 class="medium" style="margin: 20px 0;">Most of the kite tests were unpiloted, with sandbags or chains and even a local boy as ballast</h5>
+          <h6 class="huge" style="margin: 50px 0 0;">Aerodynamics</h6>
+        </div>
+        
+
+
+        <div class="android-customized-section">
+          <div class="android-customized-section-text" style="background: #E0E0E0;">
+        
+          <!-- Type Tester --> 
+          
+          <!-- Raised button -->
+          <span id="typetester">
+          <button id="p18" class="mdl-button mdl-js-button">18px</button>
+          <button id="p24" class="mdl-button mdl-js-button">24px</button>
+          <button id="p48" class="mdl-button mdl-js-button">48px</button>
+          <button id="p64" class="mdl-button mdl-js-button">64px</button>
+          <button id="p128" class="mdl-button mdl-js-button">128px</button>
+          </span>
+          <div id="editable" contenteditable="true" class="android-slogan regular">Type here&hellip;</div>
+          <p class="clearfix" style="margin-bottom: 40px;"></p>
+         
+
+         <!-- Raised button -->
+          <button id="light" class="mdl-button mdl-js-button">Light</button>
+          <button id="regular" class="mdl-button mdl-js-button">Regular</button>
+          <button id="medium" class="mdl-button mdl-js-button">Medium</button>
+          <button id="semibold" class="mdl-button mdl-js-button">Semi-Bold</button>
+          <button id="bold" class="mdl-button mdl-js-button">Bold</button>
+          <p class="clearfix" style="margin-bottom: 60px;"></p>
+          </div>
+        </div>
+
+        <!--          
+         <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="50" tabindex="0" id = "slide_01">
+        
+        
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield" id="text_01">
+            <input class="mdl-textfield__input" type="text" id="inp_text_01">
+          </div>
+        </form>
+        -->
+
+        
+
+        <!--
+          <div class="logo-font android-create-character">
+            <a href="">Download Jura</a> | <a href="">Github Repo</a> | <a href="">Jura on Google Fonts</a> 
+          </div>
+
+        -->
+        
+        <!--
+
+        <div id="glyph-reperoire" class="android-screen-section mdl-typography--text-center">
+          <a name="screens"></a>
+          <div class="logo-font android-slogan regular"><h1>Glyph Repertoire</h1></div>
+          <div class="android-screens">
+            
+            <div class="android-wear android-screen" style="height: 400px;">
+            <p class="clearfix"></p>
+            
+            <div style="margin-top: 80px;"><h1 class="regular" style="letter-spacing: .05em;">AÁĂẮẶẰẲẴÂẤẬẦẨẪȀÄẠÀẢȂĀĄÅǺÃÆǼBCĆČÇĈĊDǱǄÐĎĐǲǅEÉĔĚÊẾỆỀỂỄȄËĖẸÈẺȆĒĘẼFGĞǦĜĢĠHĦĤIÍĬÎȈÏİỊÌỈȊĪĮĨJĴKĶLǇĹĽĻĿǈŁMNǊŃŇŅŊǋÑOÓŎÔỐỘỒỔỖȌÖȪȰỌÒỎƠỚỢỜỞỠŐȎŌǪØǾÕȬŒPÞQRŔŘŖȐȒSŚŠŞŜȘẞƏTŦŤŢȚUÚŬÛȔÜỤÙỦƯỨỰỪỬỮŰȖŪŲŮŨVWẂŴẄẀXYÝŶŸỴỲỶȲỸZŹŽŻ</h1></div>
+
+            <div style="margin-top: 80px;"><h1 class="regular" style="letter-spacing: .05em;">aáăắặằẳẵâấậầẩẫȁäạàảȃāąåǻãæǽbcćčçĉċdðďđǳǆeéĕěêếệềểễȅëėẹèẻȇēęẽəfgğǧĝģġhħĥiıíĭîȉïịìỉȋīįĩjȷĵkķĸlĺľļŀǉłmnńňņŋǌñoóŏôốộồổỗȍöȫȱọòỏơớợờởỡőȏōǫøǿõȭœpþqrŕřŗȑȓsśšşŝșßtŧťţțuúŭûȕüụùủưứựừửữűȗūųůũvwẃŵẅẁxyýŷÿỵỳỷȳỹzźžżﬁﬂªºƒ1234567890</h1></div>
+            <p class="clearfix" style="margin-top: 40px;"></p>
+            
+
+          </div>
+        </div>
+        -->
+
+        <div class="android-customized-section">
+          <div class="android-customized-section-text"
+            <p class="mdl-typography--font-light">
+            <h1 id="glyph-reperoire">Glyph Repertoire</h1>
+        
+            <div>
+            <h4>Latin characters</h4>
+      
+            <em>Standard (automatic) ligatures</em><br>
+            <span class="px24">fi fl ff</span>
+
+            <h4>Numerals</h4>
+            <em>Arabic figures</em><br>
+            <span class="px24">π ≈ 3·14159265358979323…</span><br><br>
+            <em>Fractions</em><br>
+            <span class="px24">½ ¼ ¾</span><br>
+
+            <em>Superscript and Subscript</em><br>
+            <span class="spaced">¹²³⁴</span><br>
+            
+
+            <h4>Typographical equipment</h4>
+            <br/>
+            <em>Punctuation and quotation marks</em><br>
+            <span class="spaced px24">.…,·•:;¡!¿?{}[]()\/—–-_*‹›«»‚‘’„“”'"</span><br><br>
+            <em>Other</em><br>
+            <span class="spaced px24">|¦@&†‡¶§^~©®™</span><br><br>
+
+            <em>Currencies</em><br>
+            <span class="px24">₵23 ¢20 ₡32 1¤ $23 32₫ €23 ƒ23 23₣ 43₲ 100₭ ₤33 ₺34  ₼45 ₦45 55₧ 54₱ 54₽ 54₹ £54 ₩42 ¥34</span> <br /> <br />
+
+            <em>Units of measure</em><br>
+            <span class="px24">47µF 100kΩ 21°C #19 №38 240g</span><br><br>
+            <em>Mathematical</em><br>
+            <span class="spaced px24">≈~=≠∙÷¬−+±×∕>≥<≤%‰</span><br><br>
+            <em>Ordinals</em><br>
+            <span class="px24">ª º</span><br></p>
+
+            <h1 id="otfeatures">OpenType features</h1>
+            <small>(view in Firefox or Chrome)</small> <br />
+          
+            <em>Figures and characters (proportional)</em><br>
+            <span class="light px24">9876543210#¢¤$€ƒ₺₽£¥≈÷=>≥&lt;≤¬−×≠+±</span><br>
+            <span class="regular px24">9876543210#¢¤$€ƒ₺₽£¥≈÷=>≥&lt;≤¬−×≠+±</span><br>
+            <span class="medium px24">9876543210#¢¤$€ƒ₺₽£¥≈÷=>≥&lt;≤¬−×≠+±</span><br>
+            <span class="semibold px24">9876543210#¢¤$€ƒ₺₽£¥≈÷=>≥&lt;≤¬−×≠+±</span><br>
+            <span class="bold px24">9876543210#¢¤$€ƒ₺₽£¥≈÷=>≥&lt;≤¬−×≠+±</span><br>
+            <br>
+
+            <em>Ordinals</em><br>
+            <span class="px24">8a 9o</span> <span class="red px24">></span> <span class="ordn px24">8a 9o</span><br><br>
+
+
+            <em>Capital Eszett as contexual alternate</em><br>
+            <span class="nocalt px24">AßEN</span> <span class="case px24"><span class="red px24">></span> AßEN</span><br><br>
+
+            <!--
+            <em>Capital spacing</em><br>
+            <span class="px24">CAPS 1 2 3 4 5 A B C D E F G H I</span><br />
+            <span class="red px24"> ↓</span><br />
+            <span class="px24 cpsp">CAPS 1 2 3 4 5 A B C D F G H I</span><br /><br>
+            -->
+
+            <em>Case specific forms (centered/scaled to uppercase letters)</em><br>
+            <span class="px24"> n· ¡n¿ {n} [n] (n) —nl–n- «n» ‹n› |n@ </span><span class="red">↓</span><br>
+            <span class="case px24">
+            H· ¡H¿ {H} [H] (H) —H–H- «H» ‹H› |H@ </span><br><br>
+
+            <em>Dutch ij- and IJ-digraph with acute</em><br>
+            <span class="px24">íj ÍJ</span> <span class="red px24">></span> <span id="lang" lang="nl" class="px24">íj ÍJ</span><br><br>
+
+            <em>Turkish dotted i and dotless ı capitalisation</em><br>
+            <span class="px24">ı i I İ</span> <span class="red px24"><span class="case">></span></span> <font style="text-transform: uppercase;"><span id="lang" lang="tr" class="px24">ı i I İ</span></font><br><br>
+            <em>Catalan punt volat</em><br>
+            <span class="px24">cel·la CEL·LA </span> <span class="red px24">></span> <span id="lang" lang="ca" class="px24">cel·la CEL·LA </span><br><br>
+
+            <em>Moldovan and Romanian -cedilla</em><br>
+            <span class="px24">Ş ş Ţ ţ</span><span class="red px24"> > </span><span id="lang" lang="ro" class="px24">Ş ş Ţ ţ</span><br><br>
+
+
+            <em>List of supported Latin-based languages:</em><br />
+            <span class="px24"> Abenaki, Afaan Oromo, Afar, Afrikaans, Albanian, Alsatian, Amis, Anuta, Aragonese, Aranese, Aromanian, Arrernte, Arvanitic (Latin), Asturian, Atayal, Aymara, Azerbaijani, Bashkir (Latin), Basque, Belarusian (Latin), Bemba, Bikol, Bislama, Bosnian, Breton, Cape Verdean Creole, Catalan, Cebuano, Chamorro, Chavacano, Chichewa, Chickasaw, Cimbrian, Cofán, Cornish, Corsican, Creek, Crimean Tatar (Latin), Croatian, Czech, Danish, Dawan, Delaware, Dholuo, Drehu, Dutch, English, Esperanto, Estonian, Faroese, Fijian, Filipino, Finnish, Folkspraak, French, Frisian, Friulian, Gagauz (Latin), Galician, Ganda, Genoese, German, Gikuyu, Gooniyandi, Greenlandic (Kalaallisut), Guadeloupean Creole, Gwich’in, Haitian Creole, Hän, Hawaiian, Hiligaynon, Hopi, Hotcąk (Latin), Hungarian, Icelandic, Ido, Igbo, Ilocano, Indonesian, Interglossa, Interlingua, Irish, Istro-Romanian, Italian, Jamaican, Javanese (Latin), Jèrriais, Kaingang, Kala Lagaw Ya, Kapampangan (Latin), Kaqchikel, Karakalpak (Latin), Karelian (Latin), Kashubian, Kikongo, Kinyarwanda, Kiribati, Kirundi, Klingon, Kurdish (Latin), Ladin, Latin, Latino sine Flexione, Latvian, Lithuanian, Lojban, Lombard, Low Saxon, Luxembourgish, Maasai, Makhuwa, Malay, Maltese, Manx, Māori, Marquesan, Megleno-Romanian, Meriam Mir, Mirandese, Mohawk, Moldovan, Montagnais, Montenegrin, Murrinh-Patha, Nagamese Creole, Nahuatl, Ndebele, Neapolitan, Ngiyambaa, Niuean, Noongar, Norwegian, Novial, Occidental, Occitan, Old Icelandic, Old Norse, Onĕipŏt, Oshiwambo, Ossetian (Latin), Palauan, Papiamento, Piedmontese, Polish, Portuguese, Potawatomi, Q’eqchi’, Quechua, Rarotongan, Romanian, Romansh, Rotokas, Sami (Inari Sami), Sami (Lule Sami), Sami (Northern Sami), Sami (Southern Sami), Samoan, Sango, Saramaccan, Sardinian, Scottish Gaelic, Serbian (Latin), Seri, Seychellois Creole, Shawnee, Shona, Sicilian, Silesian, Slovak, Slovenian, Slovio (Latin), Somali, Sorbian (Lower Sorbian), Sorbian (Upper Sorbian), Sotho (Northern), Sotho (Southern), Spanish, Sranan, Sundanese (Latin), Swahili, Swazi, Swedish, Tagalog, Tahitian, Tetum, Tok Pisin, Tokelauan, Tongan, Tshiluba, Tsonga, Tswana, Tumbuka, Turkish, Turkmen (Latin), Tuvaluan, Tzotzil, Uzbek (Latin), Venetian, Vepsian, Volapük, Võro, Wallisian, Walloon, Waray-Waray, Warlpiri, Wayuu, Welsh, Wik-Mungkan, Wiradjuri, Wolof, Xavante, Xhosa, Yapese, Yindjibarndi, Zapotec, Zarma, Zazaki, Zulu, Zuni</span>
+ 
+            </p>
+          </div>
+          <div class="android-customized-section-image"></div>
+        </div>
+
+         <div class="android-wear-section">
+          <div class="android-wear-band">
+            <div class="android-wear-band-text">
+              <div class="mdl-typography--display-2 mdl-typography--font-thin"><h1 id="download" style="color: #E0E0E0;" class="regular">Get Jura now</h1></div>
+              <p class="mdl-typography--headline mdl-typography--font-thin">
+               <h6 style="color: #E0E0E0;" class="regular">in five styles. <br />Published under the <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">SIL OFL 1.1. Font License</a>. <br /></h6>
+              </p>
+              <p>
+                <a style="color: #E0E0E0;" class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link regular" href="https://github.com/alexeiva/jura/files/514322/Jura.TTF.zip">
+                  Download TTF &nbsp;<i class="material-icons">chevron_right</i>
+                </a>
+                <a style="color: #E0E0E0;" class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link regular" href="https://github.com/alexeiva/jura/files/514325/Jura.OTF.zip">
+                  Download OTF &nbsp;<i class="material-icons">chevron_right</i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div> 
+      
+
+        <div class="android-more-section">
+            <div class="android-customized-section-text">
+            <div class="logo-font android-slogan regular"><h1 id="worklog">Worklog</h1></div>
+            <p class="mdl-typography--font-light">
+            The new version of Jura has been improved and extended to support more languages, including Vietnamese. This worklog tells the story of the process.
+              <br>
+              <a href="https://groups.google.com/forum/#!topic/googlefonts-discuss/EbCnvq3DIco" class="android-link mdl-typography--font-light">View full worklog on GF Discussions thread</a>
+            </p>
+          </div>
+
+          <div class="android-card-container mdl-grid">
+
+            
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/small/origins.jpg">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Origins</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Graphical features of Jura are closely related to the Kayah Li part, with an offset to the diagonal nature of some strokes, unique for this script. Another detail, Kayah Li lacks the roundness of Latin.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <!--
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Read more 
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+                 -->
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/small/monoline-master.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Monoline Master</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">I discovered a better method for generating this master: with the remove overlap option off. This produces a much cleaner result, and eliminates the need for a post-filter cleanup.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <!--<a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Read more
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+                 -->
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/small/vietnamese.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Vietnamese</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">In a case of a modular typeface like Jura I tried to go with as few accent variants as possible. However some custom accents were built for this set.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <!--<a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Read more
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+                 -->
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/small/font-inspector.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Finish Line</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">The font inspector script was a great helper for refining metrics. I hope this time investment will pay off, and make kerning a lesser hassle.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <!--<a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Read more
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+                 -->
+              </div>
+            </div>
+  
+    <!--
+
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Welcome</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Mauris sagittis pellentesque lacus eleifend lacinia...
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                Get Started
+              </a>
+            </div>
+          </div>
+-->
+
+          </div>
+        </div>
+
+        
+
+
+        <footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">&copy;2010&ndash;2016 Jura Project Authors.<br />
+            Jura is designed by <a href="http://danieljohnson.name">Daniel Johnson</a> and <a href="http://110design.ru">Alexei Vanyashin</a></p>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            <a href="#download" class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+            Download
+            </a>
+            <a class="android-link mdl-typography--font-light" href="http://github.com/alexeiva/jura">Github Repo</a>
+            <a class="android-link mdl-typography--font-light" href="https://fonts.google.com/specimen/Jura">Google Fonts</a>
+          </div>
+
+        </footer>
+      </div>
+    </div>
+    
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $(function () {
+    $('#light').click(function() {
+      $('#editable').removeClass()
+                    .addClass('light android-slogan ');
+    });
+
+    $('#regular').click(function() {
+      $('#editable').removeClass()
+                    .addClass('regular android-slogan ');
+    });
+
+    $('#medium').click(function() {
+      $('#editable').removeClass()
+                    .addClass('medium android-slogan ');
+    });
+    $('#semibold').click(function() {
+       $('#editable').removeClass()
+                     .addClass('semibold android-slogan ');
+    });
+
+    $('#bold').click(function() {
+      $('#editable').removeClass()
+                    .addClass('bold android-slogan');
+    });
+
+    // Font Size buttons
+
+    $('#p18').click(function() {
+      $('#editable').css('font-size', '18px');
+    });
+
+    $('#p24').click(function() {
+      $('#editable').css('font-size', '24px');
+    });
+
+    $('#p48').click(function() {
+      $('#editable').css('font-size', '58px');
+    });
+    $('#p64').click(function() {
+      $('#editable').css('font-size', '64px');
+    });
+
+    $('#p128').click(function() {
+      $('#editable').css('font-size', '128px');
+    });
+
+
+  $('#slide_01').on('change',function(){
+      var val = $(this).val();
+      //$('#editable').css('font-size', val + ' px');
+      //$('h1').css("fontSize", val + " px" );
+  });
+
+  $('#slide_01').on('input',function(){
+     $("#text_01").get(0).MaterialTextfield.change(this.value);
+  });
+  $('#inp_text_01').keyup(function() {
+     $("#slide_01").get(0).MaterialSlider.change($( '#inp_text_01').val());
+    console.dir($('#slide_01'));
+  });
+
+/*
+    $("[name=toggler]").click(function(){
+            $('#editable').removeClass()
+                          .addClass($(this).val() + ' android-slogan');
+    });
+*/
+  });
+  </script>  
+
+  
+  </body>
+</html>
